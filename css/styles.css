@@ -1,0 +1,12 @@
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height: 100vh;
+}
+footer {
+    background-color: #212121;
+    align-content: flex-end;
+}
