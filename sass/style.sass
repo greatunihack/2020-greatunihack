@@ -1,6 +1,7 @@
-$header: 'Sarabun', sans-serif
-$paragraph: 'Roboto', sans-serif 
+$sarabun: 'Sarabun', sans-serif
+$roboto: 'Roboto', sans-serif 
 $footer: #212121
+$footer-font-color: #ffffff
 
 html, body
     margin: 0
@@ -13,11 +14,45 @@ header
 footer
     background-color: $footer
     align-content: flex-end
+    color: $footer-font-color
+    font-family: $sarabun
+    text-align: center
+    font-weight: 200
+    h3
+        display: inline
+    img
+        width: 50px
+        height: 40px
+        vertical-align: middle
+    .title-box
+        display: flex
+        algin-items: center
+        justify-content: center
+        padding: 10px
+    ul
+        list-style-type: none
+    address
+        font-style: normal
+    .link
+        color: inherit
+    .designer
+        color: #D1D1D1
+    .copywrite
+        color: #D8D8D8
+        font-style: normal
+        font-weight: 200
+
+
+.sarabun
+    font-family: $sarabun
+
+.roboto
+    font-family: $roboto
 
 h1
-    font-family: $header
+    font-family: $sarabun
 p
-    font-family: $paragraph
+    font-family: $roboto
     margin: 0
     padding: 0
 
