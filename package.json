@@ -1,0 +1,22 @@
+{
+  "name": "2020-greatunihack",
+  "version": "1.0.0",
+  "description": "Site for Great Uni Hack 2020",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass sass/style.sass:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unicsmcr/2020-greatunihack.git"
+  },
+  "author": "Finlay and Vishal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unicsmcr/2020-greatunihack/issues"
+  },
+  "homepage": "https://github.com/unicsmcr/2020-greatunihack#readme",
+  "dependencies": {
+    "sass": "^1.27.0"
+  }
+}
