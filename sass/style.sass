@@ -1,64 +1,14 @@
-$sarabun: 'Sarabun', sans-serif
-$roboto: 'Roboto', sans-serif 
-$footer: #212121
-$footer-font-color: #ffffff
-
-
-@function calculateRem($size)
-  $remSize: $size / 16px
-  @return #{$remSize}rem
-
-@mixin fontSize($size) 
-  font-size: $size //Fallback in px
-  font-size: calculateRem($size)
+@use "header"
+@use "footer"
+@use "nav"
+@use "main"
+@import "base"
 
 html, body
     margin: 0
     display: flex
     flex-direction: column
     font-family: $roboto
-header
-    height: 100vh
-    background-image: linear-gradient(#23811B, #202F4F)
-
-footer
-    background-color: $footer
-    align-content: flex-end
-    color: $footer-font-color
-    font-family: $sarabun
-    text-align: center
-    font-weight: 200
-    h4
-        display: inline
-    .img-facebook
-        width: 35px
-        height: 23px
-        vertical-align: middle
-    .img-instagram
-        width: 36px
-        height: 27px
-        vertical-align: middle
-    .title-box
-        display: flex
-        align-items: center
-        justify-content: center
-        padding: 10px
-    ul
-        list-style-type: none
-    address
-        font-style: normal
-        @include fontSize(12px)
-    .link
-        color: inherit
-    .designer
-        color: #D1D1D1
-        @include fontSize(12px)
-    .copywrite
-        color: #D8D8D8
-        font-style: normal
-        font-weight: 200
-        @include fontSize(10px)
-
 
 .sarabun
     font-family: $sarabun
@@ -82,57 +32,3 @@ p
     margin: 0
     padding: 0
 
-nav
-    background-color: transparent
-    display: flex
-    position: fixed
-    width: 100vw
-    justify-content: space-between
-    height: 10vh
-    align-items: center
-    color: #fff
-
-    h1
-        padding-left: 5vw
-        font-size: 2rem
-
-    a
-        text-decoration: none
-        color: inherit    
-    ul
-        background-color: transparent
-        list-style-type: none
-        margin: 0
-        padding: 0
-        overflow: hidden
-        font-size: 1.1rem
-        padding: 0 1rem
-        height: 10vh
-        display: flex
-        flex-direction: columns
-        align-items: center
-        li
-            background-color: transparent
-            float: left
-            padding: 0.8rem 1rem
-            margin: 0 1rem
-
-header
-    #logo
-        position: absolute
-        top: 30%
-        left: 50%
-        width: 30%
-
-section 
-    h2
-        margin: 0
-#about
-    background-image: linear-gradient(#202F4F, #3EA5AC)
-    height: 20vh
-    display: flex
-    padding: 10vw
-    color: #fff
-
-    img
-        width: 25rem
