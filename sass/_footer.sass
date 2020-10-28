@@ -3,14 +3,6 @@
 $background: #212121
 $footer-font-color: #ffffff
 
-@function calculateRem($size)
-  $remSize: $size / 16px
-  @return #{$remSize}rem
-
-@mixin fontSize($size) 
-  font-size: $size //Fallback in px
-  font-size: calculateRem($size)
-
 footer
     background-color: $background
     align-content: flex-end
