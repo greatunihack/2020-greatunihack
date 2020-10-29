@@ -17,6 +17,7 @@ body {
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
+	padding: 0 1em;
 }
 
 .highlight-button {
@@ -42,7 +43,7 @@ header {
 	color: white;
 }
 
-header > .container {
+.col2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -154,12 +155,6 @@ main section {
 	background: linear-gradient(#263A5E, #41a3af);
 }
 
-#about > .container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 2em;
-}
-
 #about > .container img {
 	width: 100%;
 }
@@ -179,6 +174,8 @@ main section {
 #faq article {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
 .card {
@@ -236,6 +233,7 @@ main section {
 }
 
 #lastYear article img {
+	max-width: calc(100vw - 2rem);
 	width: 100%;
 	border: 4px solid #A2FBCC;
 	box-shadow: 0px 0px 1em #A2FBCC;
@@ -311,6 +309,12 @@ footer #email {
 	color: white;
 }
 
+@media only screen and (max-width: 1200px) {
+	.container {
+		max-width: calc(100vw - 4em);
+	}
+}
+
 @media only screen and (max-width: 1300px) {
 	#lastYear article {
 		grid-template-columns: 1fr 1fr 1fr;
@@ -330,7 +334,12 @@ footer #email {
 }
 
 @media only screen and (max-width: 800px) {
-	header > .container {
+	.card {
+		min-width: 80vw;
+		max-width: 80vw;
+	}
+
+	.col2 {
 		grid-template-columns: none;
 		grid-template-rows: auto auto;
 		text-align: center;
@@ -346,5 +355,11 @@ footer #email {
 		grid-row: 1;
 		max-height: 30vh;
 		object-fit: contain;
+	}
+
+	#medals {
+		grid-template-columns: none;
+		grid-template-rows: auto auto auto;
+		gap: 5em;
 	}
 }
