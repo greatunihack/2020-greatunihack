@@ -223,7 +223,7 @@ main section {
 	margin: 0 0.25em;
 }
 
-#lastYear .subtitle {
+.subtitle {
 	margin-top: 1em;
 	font-size: 1.25em;
 }
@@ -244,6 +244,33 @@ main section {
 
 #lastYear .centered {
 	text-align: center;
+}
+
+/* sponsors */
+#sponsors {
+	background: linear-gradient(#fc7070, #bc4039);
+}
+
+#medals {
+	margin-top: 5em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#medals > div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#medals .medal {
+	height: 3em;
+}
+
+#medals p {
+	margin-top: 1em;
+	text-align: center;
+	font-weight: bold;
 }
 
 
