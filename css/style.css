@@ -140,12 +140,16 @@ main article p {
 }
 
 main section {
-	margin-bottom: 4em;
+	padding-bottom: 4em;
 }
 
 /*
 	about us
 */
+#about {
+	background: linear-gradient(#263A5E, #41a3af);
+}
+
 #about > .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -164,6 +168,10 @@ main section {
 /*
 	faq
 */
+#faq {
+	background: linear-gradient(#41a3af, #588b5c);
+}
+
 #faq article {
 	display: flex;
 	flex-wrap: wrap;
