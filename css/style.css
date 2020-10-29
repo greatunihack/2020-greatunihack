@@ -273,6 +273,43 @@ main section {
 	font-weight: bold;
 }
 
+#sponsors .sponsor {
+	object-fit: contain;
+}
+
+/*
+	footer
+*/
+
+footer {
+	background: #212121;
+	padding: 2rem 0;
+	text-align: center;
+	color: white;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer ul li {
+	display: inline-block;
+	font-size: 2em;
+}
+
+footer ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+footer ul li:not(:last-child) {
+	margin-right: 0.5em;
+}
+
+footer #email {
+	color: white;
+}
 
 @media only screen and (max-width: 800px) {
 	header > .container {
