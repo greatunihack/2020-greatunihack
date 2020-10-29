@@ -105,13 +105,13 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
+	margin-right: 1em;
 }
 
 nav a {
 	color: white;
 	text-decoration: none;
 	font-size: 1.25em;
-	margin-right: 1em;
 }
 
 nav .fa {
@@ -361,5 +361,52 @@ footer #email {
 		grid-template-columns: none;
 		grid-template-rows: auto auto auto;
 		gap: 5em;
+	}
+}
+
+/* mobile nav */
+#mobilenav {
+	display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+	#mobilenav {
+		display: flex;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 4rem;
+		background: black;
+		color: white;
+		text-align: right;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 0 1rem;
+	}
+	#mobilenav .fa {
+		font-size: 2.5rem;
+	}
+	header {
+		margin-top: 4rem;
+	}
+	nav {
+		display: none;
+		background: black;
+		top: 4rem;
+		grid-template-columns: none;
+		text-align: center;
+		bottom: 0;
+	}
+	nav.opened {
+		display: grid;
+	}
+	#navlogo {
+		display: none;
+	}
+	nav ul li {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 3em;
 	}
 }

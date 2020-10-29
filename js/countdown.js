@@ -25,3 +25,20 @@ function updateTimer() {
 
 setInterval(updateTimer, 250);
 updateTimer();
+
+const nav = document.querySelector('nav');
+const menuIcon = document.querySelector('#mobilenav i');
+let menuOpen = false;
+
+function toggleMenu() {
+	menuOpen = !menuOpen;
+	if (menuOpen) {
+		nav.classList.add('opened');
+		menuIcon.classList.remove('fa-bars');
+		menuIcon.classList.add('fa-chevron-left');
+	} else {
+		nav.classList.remove('opened');
+		menuIcon.classList.add('fa-bars');
+		menuIcon.classList.remove('fa-chevron-left');
+	}
+}
