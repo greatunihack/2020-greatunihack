@@ -25,6 +25,53 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color: white;
+}
+
+header > .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+header > .container .event-date {
+	font-size: 2em;
+}
+
+header > .container .event-time {
+	font-size: 3em;
+}
+
+header > .container .event-description {
+	font-size: 1.25em;
+	margin-bottom: 4em;
+}
+
+header .buttons {
+	display: grid;
+	grid-template-columns: min-content auto;
+	gap: 2em;
+	grid-gap: 2em;
+	align-items: center;
+}
+
+header .buttons > a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+header .start-button {
+	background: #3AE088;
+	padding: 0.5em 2em;
+	border: 0.2em solid #A2FBCC;
+	border-radius: 4em;
+	font-weight: bold;
+	box-shadow: 0px 0px 0.5em #A2FBCC;
+}
+
+header #logo {
+	width: 100%;
 }
 
 nav {
