@@ -46,6 +46,7 @@ header {
 .col2 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	gap: 2em;
 }
 
 header > .container .event-date {
@@ -174,7 +175,6 @@ main section {
 #faq article {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: center;
 }
 
