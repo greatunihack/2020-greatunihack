@@ -30,6 +30,17 @@ const nav = document.querySelector('nav');
 const menuIcon = document.querySelector('#mobilenav i');
 let menuOpen = false;
 
+function closeMenu() {
+	menuOpen = true;
+	toggleMenu();
+}
+
+nav.addEventListener('click', e => {
+	if (e.target.tagName === 'A') {
+		closeMenu();
+	}
+})
+
 function toggleMenu() {
 	menuOpen = !menuOpen;
 	if (menuOpen) {
