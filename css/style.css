@@ -177,7 +177,7 @@ main section {
 	flex-wrap: wrap;
 }
 
-#card {
+.card {
 	flex: 1;
 	background: white;
 	border-radius: 2em;
@@ -186,18 +186,19 @@ main section {
 	margin: 1em;
 	padding: 2em 1em 1em 1em;
 	text-align: center;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
 }
 
-#card img {
+.card img {
 	height: 3em;
 }
 
-#card h4 {
+.card h4 {
 	font-weight: bold;
 	font-size: 1.25em;
 }
 
-#card p {
+.card p {
 	font-size: 1em;
 	text-align: center;
 }
