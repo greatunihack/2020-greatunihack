@@ -169,6 +169,9 @@ main section {
 	content: "//";
 	color: silver;
 }
+#teamimg {
+	border-radius: 14px;
+}
 
 /*
 	faq
