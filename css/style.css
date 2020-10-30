@@ -37,6 +37,15 @@ body {
 	text-transform: uppercase;
 }
 
+.lightened {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.shadow {
+	font-weight: bold;
+	text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+}
+
 /* header */
 header {
   min-height: 100vh;
@@ -144,8 +153,8 @@ main h1 {
 }
 
 main article p {
-	font-size: 1.5em;
-	line-height: 1.6em;
+	font-size: 1.2em;
+	line-height: 1.5em;
 	text-justify: newspaper;
 	text-align: justify;
 }
@@ -262,7 +271,7 @@ main section {
 #medals {
 	margin-top: 5em;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 
 #medals > div {
