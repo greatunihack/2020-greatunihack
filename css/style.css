@@ -253,6 +253,7 @@ main section {
 /* sponsors */
 #sponsors {
 	background: linear-gradient(#fc7070, #bc4039);
+	padding: 0 0 4rem 0;
 }
 
 #medals {
