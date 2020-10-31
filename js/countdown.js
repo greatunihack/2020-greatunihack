@@ -1,4 +1,4 @@
-const startTime = new Date('28 November 2020').getTime();
+const startTime = new Date(1606563000000).getTime();
 const eventTime = document.getElementById('event-time');
 
 function lpad(n) {
