@@ -207,6 +207,12 @@ main section {
 	box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
 }
 
+.card a {
+	color: #3AE088;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 .card img {
 	height: 3em;
 }
