@@ -292,6 +292,14 @@ main section {
 
 #sponsors .sponsor {
 	object-fit: contain;
+	width: 25%;
+}
+#sponsors .sponsor:first-child {
+	margin-right: 1rem;
+}
+#sponsors .bet365 {
+	width: 14%;
+	margin: 0 auto;
 }
 
 /*
@@ -427,5 +435,8 @@ footer #email {
 		display: block;
 		margin-right: 0;
 		margin-bottom: 3em;
+	}
+	#sponsors .sponsor {
+		width: 25%;
 	}
 }
