@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -78,7 +82,9 @@
             </p>
           </article>
           <aside>
-            <img id="teamimg" src="./res/about/team.png" alt="" />
+            <a data-fancybox="image" href="./res/about/team.png">
+              <img id="teamimg" src="./res/about/team.png" alt="" />
+            </a>
           </aside>
         </div>
       </section>
@@ -153,14 +159,30 @@
           <h1>Last Year was &lt;<span id="awesome">awesome</span>/&gt;</h1>
           <p class="subtitle">When we didn't know what Covid-19 was!</p>
           <article>
-                <img src="./res/lastYear/1.png" alt="">
-                <img src="./res/lastYear/2.png" alt="">
-                <img src="./res/lastYear/3.png" alt="">
-                <img src="./res/lastYear/4.png" alt="">
-                <img src="./res/lastYear/5.png" alt="">
-                <img src="./res/lastYear/6.png" alt="">
-                <img src="./res/lastYear/7.png" alt="">
-                <img src="./res/lastYear/8.png" alt="">
+            <a data-fancybox="gallery" href="./res/lastYear/1-large.png">
+              <img src="./res/lastYear/1.png" alt="">
+            </a>
+            <a data-fancybox="gallery" href="./res/lastYear/2-large.png">
+              <img src="./res/lastYear/2.png" alt="">
+            </a>
+            <a data-fancybox="gallery" href="./res/lastYear/3-large.png">
+              <img src="./res/lastYear/3.png" alt="">
+            </a>
+            <a data-fancybox="gallery" href="./res/lastYear/4-large.png">
+              <img src="./res/lastYear/4.png" alt="">
+            </a>
+            <a data-fancybox="gallery" href="./res/lastYear/5-large.png">
+              <img src="./res/lastYear/5.png" alt="">
+            </a>
+            <a data-fancybox="gallery" href="./res/lastYear/6-large.png">
+              <img src="./res/lastYear/6.png" alt="">
+            </a>
+            <a data-fancybox="gallery" href="./res/lastYear/7-large.png">
+              <img src="./res/lastYear/7.png" alt="">
+            </a>
+            <a data-fancybox="gallery" href="./res/lastYear/8-large.png">
+              <img src="./res/lastYear/8.png" alt="">
+            </a>
           </article>
           <div class="centered">
             <a href="https://unicsmcr.com/gallery" class="highlight-button" target="_blank" rel="noreferrer">See more!</a>
@@ -209,5 +231,7 @@
       </div>
     </footer>
     <script src="js/countdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>   
   </body>
 </html>
