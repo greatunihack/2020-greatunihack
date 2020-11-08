@@ -62,6 +62,13 @@ header {
 	gap: 2em;
 }
 
+@media only screen and (min-width: 1001px) {
+	header > .container {
+		margin-top: 96px;
+		margin-bottom: 32px;
+	}
+}
+
 header > .container .event-date {
 	font-size: 2em;
 }
