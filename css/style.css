@@ -284,7 +284,7 @@ main section {
 #medals {
 	margin-top: 5em;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 #medals > div {
@@ -304,15 +304,10 @@ main section {
 }
 
 #sponsors .sponsor {
-	object-fit: contain;
-	width: 25%;
-}
-#sponsors .sponsor:first-child {
-	margin-right: 1rem;
-}
-#sponsors .bet365 {
-	width: 14%;
-	margin: 0 auto;
+	max-width: 80%;
+	display: block;
+	margin: 0 auto 1em auto;
+	text-align: center;
 }
 
 /*
@@ -450,6 +445,8 @@ footer #email {
 		margin-bottom: 3em;
 	}
 	#sponsors .sponsor {
-		width: 25%;
+		max-width: 90%;
+		object-fit: contain;
+		max-height: 20vh;
 	}
 }
